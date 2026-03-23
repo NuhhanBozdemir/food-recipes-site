@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Salatalar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="common.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Lezzetli Tarifler</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto"> <!-- Menü öğelerini ortalamak için mx-auto eklendi -->
+                <li class="nav-item"><a class="nav-link" href="index.html">Ana Sayfa</a></li>
+                <li class="nav-item"><a class="nav-link" href="kategoriler.html">Kategoriler</a></li>
+                <li class="nav-item"><a class="nav-link" href="hakkinda.html">Hakkında</a></li>
+                <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+                <li class="nav-item"><a class="nav-link" href="login.html">Giriş Yap</a></li> 
+            </ul>
+        </div>
+    </div>
+</nav>
+
+  <div class="container">
+    <h2>Salatalar</h2>
+    <div class="row">
+
+      <!-- Balık Soslu Roka Salatası -->
+      <div class="col-md-4">
+        <div class="recipe-card" data-bs-toggle="modal" data-bs-target="#balikSosluRokaModal">
+          <img src="resimler/salatalar/balik-soslu-roka-salatasi.jpg" alt="Balık Soslu Roka Salatası" />
+          <div class="recipe-card-body">
+            <h5>Balık Soslu Roka Salatası</h5>
+            <p>Balık sosu ve rokanın mükemmel uyumu.</p>
+          </div>
+          <div class="tooltip-text">Balık sosu ve roka!</div>
+        </div>
+      </div>
+
+      <!-- Brüksel Lahanası Salatası -->
+      <div class="col-md-4">
+        <div class="recipe-card" data-bs-toggle="modal" data-bs-target="#brükselLahanasiModal">
+          <img src="resimler/salatalar/bruksel-lahanasi-salatasi.jpg" alt="Brüksel Lahanası Salatası" />
+          <div class="recipe-card-body">
+            <h5>Brüksel Lahanası Salatası</h5>
+            <p>Sağlıklı ve lezzetli bir seçenek.</p>
+          </div>
+          <div class="tooltip-text">Sağlıklı ve doyurucu!</div>
+        </div>
+      </div>
+
+      <!-- Çiğ Brokoli Salatası -->
+      <div class="col-md-4">
+        <div class="recipe-card" data-bs-toggle="modal" data-bs-target="#cigBrokoliModal">
+          <img src="resimler/salatalar/cig-brokoli-salatasi.jpg" alt="Çiğ Brokoli Salatası" />
+          <div class="recipe-card-body">
+            <h5>Çiğ Brokoli Salatası</h5>
+            <p>Çiğ brokoli ile sağlıklı salata.</p>
+          </div>
+          <div class="tooltip-text">Çiğ brokoli salatası!</div>
+        </div>
+      </div>
+
+      <!-- Kış Piyazı Salatası -->
+      <div class="col-md-4">
+        <div class="recipe-card" data-bs-toggle="modal" data-bs-target="#kisPiyaziModal">
+          <img src="resimler/salatalar/kis-piyazi.jpg" alt="Kış Piyazı Salatası" />
+          <div class="recipe-card-body">
+            <h5>Kış Piyazı Salatası</h5>
+            <p>Kış aylarına özel piyaz.</p>
+          </div>
+          <div class="tooltip-text">Kış için mükemmel!</div>
+        </div>
+      </div>
+
+      <!-- Loro Rosso Salatası -->
+      <div class="col-md-4">
+        <div class="recipe-card" data-bs-toggle="modal" data-bs-target="#loroRossoModal">
+          <img src="resimler/salatalar/lolorosso-salatasi.jpg" alt="Loro Rosso Salatası" />
+          <div class="recipe-card-body">
+            <h5>Loro Rosso Salatası</h5>
+            <p>Özel bir İtalyan salatası.</p>
+          </div>
+          <div class="tooltip-text">İtalyan salatası!</div>
+        </div>
+      </div>
+
+      <!-- Nar Ekşili Nohut Salatası -->
+      <div class="col-md-4">
+        <div class="recipe-card" data-bs-toggle="modal" data-bs-target="#narEksiliNohutModal">
+          <img src="resimler/salatalar/nar-eksili-nohut-salatasi.jpg" alt="Nar Ekşili Nohut Salatası" />
+          <div class="recipe-card-body">
+            <h5>Nar Ekşili Nohut Salatası</h5>
+            <p>Nar ekşisi ile nohut salatası.</p>
+          </div>
+          <div class="tooltip-text">Nar ekşisiyle lezzetli!</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Modals -->
+
+  <!-- Balık Soslu Roka Salatası Modal -->
+  <div class="modal fade" id="balikSosluRokaModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header"><h5>Balık Soslu Roka Salatası</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+        <div class="modal-body">
+          <img src="resimler/salatalar/balik-soslu-roka-salatasi.jpg" alt="Balık Soslu Roka Salatası" />
+          <p>Balık soslu roka salatası, özellikle deniz ürünleriyle uyumlu bir salatadır. Roka, taze nar ekşisi, zeytinyağı ve balık sosu ile karıştırılır. Salataya, dilerseniz avokado, domates ve taze soğan ekleyebilirsiniz. Hem hafif hem de lezzetli bir alternatiftir. Yanında ızgara tavuk veya somon ile servis edilebilir.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Brüksel Lahanası Salatası Modal -->
+  <div class="modal fade" id="brükselLahanasiModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header"><h5>Brüksel Lahanası Salatası</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+        <div class="modal-body">
+          <img src="resimler/salatalar/bruksel-lahanasi-salatasi.jpg" alt="Brüksel Lahanası Salatası" />
+          <p>Brüksel lahanası, zeytinyağı, limon suyu ve tuz ile harmanlanarak sağlıklı bir salata haline gelir. Üzerine kavrulmuş ceviz veya fındık eklenebilir. Ayrıca, biraz nar ekşisi veya hardal da ekleyerek tatlandırabilirsiniz. Kış aylarında özellikle tercih edilen bu salata, vitamin ve mineral açısından zengindir.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Çiğ Brokoli Salatası Modal -->
+  <div class="modal fade" id="cigBrokoliModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header"><h5>Çiğ Brokoli Salatası</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+        <div class="modal-body">
+          <img src="resimler/salatalar/cig-brokoli-salatasi.jpg" alt="Çiğ Brokoli Salatası" />
+          <p>Çiğ brokoli salatası, besleyici ve vitamin kaynağı olan brokolinin lezzetli bir şekilde sunulmasını sağlar. Brokoli çiğ olarak doğranıp, zeytinyağı, limon ve tuz ile harmanlanır. Ayrıca, üzerine doğranmış ceviz veya badem eklenerek çıtırlık katılabilir. Sağlıklı bir ara öğün olarak ideal bir seçenektir.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Kış Piyazı Salatası Modal -->
+  <div class="modal fade" id="kisPiyaziModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header"><h5>Kış Piyazı Salatası</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+        <div class="modal-body">
+          <img src="resimler/salatalar/kis-piyazi.jpg" alt="Kış Piyazı Salatası" />
+          <p>Kış piyazı salatası, soğuk havalarda hem pratik hem de besleyici bir alternatiftir. İlk olarak, bir kaseye haşlanmış kuru fasulye, doğranmış havuç ve turp ekleyin. Üzerine ince doğranmış kırmızı soğan, maydanoz ve taze nane serpin. Zeytinyağı, limon suyu, tuz ve karabiber ile hazırladığınız sosu üzerine gezdirin. Karıştırıp, soğuk olarak servis edin. Bu salata, hem lezzetli hem de sağlıklı bir seçenek sunar.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Loro Rosso Salatası Modal -->
+  <div class="modal fade" id="loroRossoModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header"><h5>Loro Rosso Salatası</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+        <div class="modal-body">
+          <img src="resimler/salatalar/lolorosso-salatasi.jpg" alt="Loro Rosso Salatası" />
+          <p>Lolo Rosso salatası, ferahlatıcı ve renkli bir salata olup, özellikle yaz aylarında tercih edilen hafif ve lezzetli bir tariftir. İlk olarak, Lolo Rosso marulunu iri iri doğrayın ve geniş bir kaseye alın. Üzerine ince doğranmış kırmızı soğan, cherry domatesler ve salatalık ekleyin. Ardından, zeytinyağı, limon suyu, tuz, karabiber ve biraz balzamik sirke ile hazırladığınız sosu salatanın üzerine dökün. Son olarak, üzerine ceviz veya fındık serpiştirerek ekstra bir lezzet katabilirsiniz. Soğuk olarak servis edin ve sağlıklı bir atıştırmalık olarak keyfini çıkarın!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Nar Ekşili Nohut Salatası Modal -->
+  <div class="modal fade" id="narEksiliNohutModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header"><h5>Nar Ekşili Nohut Salatası</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+        <div class="modal-body">
+          <img src="resimler/salatalar/nar-eksili-nohut-salatasi.jpg" alt="Nar Ekşili Nohut Salatası" />
+          <p>Nar ekşili nohut salatası, hem lezzetli hem de besleyici bir salata çeşididir. İlk olarak, haşlanmış nohutları geniş bir kaseye alın. Üzerine doğranmış kırmızı soğan, domates, salatalık ve taze nane ekleyin. Ardından, nar ekşisi, zeytinyağı, tuz, karabiber ve taze sıkılmış limon suyu ile hazırladığınız sosu salatanın üzerine dökün. Karıştırıp, üzerine nar taneleri ve biraz pul biber serpin. Bu salata, özellikle kış aylarında sofralarınızı renklendirir ve misafirlere şık bir sunum sağlar. Soğuk servis yapın ve keyifle tüketin!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

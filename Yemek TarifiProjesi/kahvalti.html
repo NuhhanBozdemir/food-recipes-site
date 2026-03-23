@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kahvaltı Tarifleri</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="common.css">
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Lezzetli Tarifler</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto"> <!-- Menü öğelerini ortalamak için mx-auto eklendi -->
+                    <li class="nav-item"><a class="nav-link" href="index.html">Ana Sayfa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kategoriler.html">Kategoriler</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hakkinda.html">Hakkında</a></li>
+                    <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Giriş Yap</a></li> 
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Kahvaltı Tarifleri</h2>
+
+        <!-- Kahvaltı Yemekleri -->
+        <div class="row">
+            <!-- Menemen -->
+            <div class="col-md-4">
+                <div class="recipe-card" data-bs-toggle="modal" data-bs-target="#menemenModal">
+                    <img src="resimler/kahvaltı/menemen.jpg" alt="Menemen">
+                    <div class="recipe-card-body">
+                        <h5>Menemen</h5>
+                        <p>Domates ve biberle yapılan nefis bir kahvaltılık.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Simit -->
+            <div class="col-md-4">
+                <div class="recipe-card" data-bs-toggle="modal" data-bs-target="#simitModal">
+                    <img src="resimler/kahvaltı/simit.jpg" alt="Simit">
+                    <div class="recipe-card-body">
+                        <h5>Simit</h5>
+                        <p>İçindeki susamlar ve sıcak fırın kokusuyla simit.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Omlet -->
+            <div class="col-md-4">
+                <div class="recipe-card" data-bs-toggle="modal" data-bs-target="#omletModal">
+                    <img src="resimler/kahvaltı/omlet.jpg" alt="Omlet">
+                    <div class="recipe-card-body">
+                        <h5>Omlet</h5>
+                        <p>Yumurtalı ve çeşitli malzemelerle zenginleşmiş pratik bir seçenek.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Tost -->
+            <div class="col-md-4">
+                <div class="recipe-card" data-bs-toggle="modal" data-bs-target="#tostModal">
+                    <img src="resimler/kahvaltı/tost.jpg" alt="Tost">
+                    <div class="recipe-card-body">
+                        <h5>Tost</h5>
+                        <p>Kaşar peynirli ve çıtır çıtır tost keyfi.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Poğaça -->
+            <div class="col-md-4">
+                <div class="recipe-card" data-bs-toggle="modal" data-bs-target="#pogacaModal">
+                    <img src="resimler/kahvaltı/pogaca.jpg" alt="Poğaça">
+                    <div class="recipe-card-body">
+                        <h5>Poğaça</h5>
+                        <p>Peynirli ya da patatesli, sıcak poğaça lezzeti.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Krep -->
+            <div class="col-md-4">
+                <div class="recipe-card" data-bs-toggle="modal" data-bs-target="#krepModal">
+                    <img src="resimler/kahvaltı/krep.jpg" alt="Krep">
+                    <div class="recipe-card-body">
+                        <h5>Krep</h5>
+                        <p>Tatlı ya da tuzlu, ince krep seçenekleriyle keyifli bir başlangıç.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Modals -->
+    <!-- Menemen Modal -->
+<div class="modal fade" id="menemenModal" tabindex="-1" aria-labelledby="menemenModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content custom-modal">
+            <div class="modal-header">
+                <h5 class="modal-title" id="menemenModalLabel">Menemen Tarifi</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="resimler/kahvaltı/menemen.jpg" alt="Menemen">
+                <p>Menemen için önce zeytinyağında doğranmış yeşil biberleri kavurun. Ardından rendelenmiş domatesleri ekleyip suyunu hafif çekene kadar pişirin. Üzerine yumurtaları kırıp karıştırmadan pişirin veya isteğe göre karıştırın. Tuz ve isteğe bağlı olarak pul biber ekleyebilirsiniz. Yanında taze ekmekle servis yapabilirsiniz. İsteğe bağlı olarak içine beyaz peynir veya sucuk da ekleyebilirsiniz.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Simit Modal -->
+<div class="modal fade" id="simitModal" tabindex="-1" aria-labelledby="simitModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content custom-modal">
+            <div class="modal-header">
+                <h5 class="modal-title" id="simitModalLabel">Simit Tarifi</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="resimler/kahvaltı/simit.jpg" alt="Simit">
+                <p>Ilık suda maya ve şekeri eritip bekletin, ardından un, tuz ve su ile hamuru yoğurun. Mayalanan hamurdan bezelere ayırıp ince uzun şeritler yapın ve iki şeridi birbirine dolayarak halka şekli verin. Şekil verdiğiniz simitleri önce pekmezli suya, sonra susama batırın. Önceden ısıtılmış fırında üzeri kızarana kadar pişirin. Dışı çıtır içi yumuşak simitler hazır. Peynir, zeytin ve çayla harika gider.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Omlet Modal -->
+<div class="modal fade" id="omletModal" tabindex="-1" aria-labelledby="omletModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="omletModalLabel">Omlet Tarifi</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="resimler/kahvaltı/omlet.jpg" alt="Omlet">
+                <p>Bir kaba yumurtaları kırın ve tuz ekleyerek iyice çırpın. Tavada tereyağı veya zeytinyağını kızdırın, ardından yumurtayı dökün. Karışımı karıştırmadan pişirin veya isteğe göre hafifçe karıştırarak yapın. Üzerine rendelenmiş peynir, doğranmış sebzeler ya da sucuk ekleyebilirsiniz. Yumurtalar tamamen pişince ocaktan alın. Sıcak servis yapın, yanında domates ve salatalıkla mükemmel olur.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Tost Modal -->
+<div class="modal fade" id="tostModal" tabindex="-1" aria-labelledby="tostModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content custom-modal">
+            <div class="modal-header">
+                <h5 class="modal-title" id="tostModalLabel">Tost Tarifi</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="resimler/kahvaltı/tost.jpg" alt="Tost">
+                <p>İki dilim ekmeğin arasına kaşar peyniri yerleştirin. İsteğe bağlı olarak sucuk, salam, domates veya zeytin dilimleri de ekleyebilirsiniz. Tost makinesini ısıtın ve ekmekleri yağlayarak içine koyun. Peynir eriyip dışı kızarana kadar bastırarak pişirin. Sıcak sıcak servis yapın. Yanına çay ve turşu iyi gider.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Poğaça Modal -->
+<div class="modal fade" id="pogacaModal" tabindex="-1" aria-labelledby="pogacaModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content custom-modal">
+            <div class="modal-header">
+                <h5 class="modal-title" id="pogacaModalLabel">Poğaça Tarifi</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="resimler/kahvaltı/pogaca.jpg" alt="Poğaça">
+                <p>Hamur için yoğurma kabına süt, yağ, yumurta, maya ve tuzu alın, üzerine azar azar un ekleyerek yumuşak bir hamur yoğurun. Hamur mayalanınca küçük parçalar koparıp içine peynir, patates ya da zeytin koyarak kapatın. Şekil verdiğiniz poğaçaları tepsiye dizin, üzerine yumurta sarısı sürün. Önceden ısıtılmış fırında üzeri kızarana kadar pişirin. Sıcak tüketildiğinde tazeliğini en iyi şekilde gösterir. Kahvaltı sofralarının vazgeçilmezidir.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Krep Modal -->
+<div class="modal fade" id="krepModal" tabindex="-1" aria-labelledby="krepModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content custom-modal">
+            <div class="modal-header">
+                <h5 class="modal-title" id="krepModalLabel">Krep Tarifi</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="resimler/kahvaltı/krep.jpg" alt="Krep">
+                <p>Bir kapta yumurta, süt, un ve bir tutam tuzu çırpın. Tavayı hafifçe yağlayıp karışımdan bir kepçe dökün ve tavayı dairesel hareketle çevirerek yayın. Orta ateşte altı piştikten sonra çevirin. Her iki yüzü de hafifçe kızarınca tavadan alın. İçine reçel, çikolata, peynir veya ıspanak gibi malzemeler koyarak sarabilirsiniz. Hem tatlı hem tuzlu tüketilebilen çok yönlü bir kahvaltılıktır.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

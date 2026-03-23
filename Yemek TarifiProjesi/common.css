@@ -1,0 +1,119 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.navbar {
+    background-color: #2d3436;
+}
+
+.navbar-brand {
+    color: #fff !important;
+}
+
+.navbar-nav .nav-link {
+    color: #ecf0f1 !important;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f39c12 !important;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin: 40px 0;
+    color: #2d3436;
+}
+
+.recipe-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    cursor: pointer;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.recipe-card:hover {
+    transform: scale(1.03);
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.recipe-card-body {
+    padding: 15px;
+    text-align: center;
+}
+
+.recipe-card-body h5 {
+    font-weight: 600;
+    color: #2d3436;
+}
+
+.recipe-card-body p {
+    font-size: 14px;
+    color: #636e72;
+    margin-top: 5px;
+}
+
+.modal-body img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.modal-body p {
+    font-size: 16px;
+}
+
+/* Belirli modallar için özel düzenleme */
+.custom-modal img {
+    max-width: 100%; /* Görselin genişliği modalın genişliğini aşmaz */
+    max-height: 300px; /* Görselin yüksekliği 300px'i geçmez */
+    object-fit: cover; /* Görselin düzgün bir şekilde kırpılması */
+    border-radius: 8px; /* Görselin köşelerini yuvarlama */
+    margin-bottom: 10px;
+}
+
+.custom-modal p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #444;
+}
+
+    /* Tooltip */
+    .tooltip-text {
+        visibility: hidden;
+        width: 160px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 5px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 100%; /* Position above the card */
+        left: 50%;
+        margin-left: -80px;
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+  
+      .recipe-card:hover .tooltip-text {
+        visibility: visible;
+        opacity: 1;
+      }
+      .navbar-nav .nav-link {
+        color: gray !important;
+    }

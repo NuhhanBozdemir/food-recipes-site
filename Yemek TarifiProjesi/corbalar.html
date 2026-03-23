@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Çorba Tarifleri</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="common.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Lezzetli Tarifler</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto"> <!-- Menü öğelerini ortalamak için mx-auto eklendi -->
+                <li class="nav-item"><a class="nav-link" href="index.html">Ana Sayfa</a></li>
+                <li class="nav-item"><a class="nav-link" href="kategoriler.html">Kategoriler</a></li>
+                <li class="nav-item"><a class="nav-link" href="hakkinda.html">Hakkında</a></li>
+                <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+                <li class="nav-item"><a class="nav-link" href="login.html">Giriş Yap</a></li> 
+            </ul>
+        </div>
+    </div>
+</nav>
+
+  <div class="container">
+    <h2>Çorba Tarifleri</h2>
+    <div class="row">
+      <!-- Kabak Çorbası -->
+      <div class="col-md-4">
+        <div class="recipe-card" data-bs-toggle="modal" data-bs-target="#kabakCorbasiModal">
+          <img src="resimler/Çorbalar/kabak-corbasi.jpeg" alt="Kabak Çorbası" />
+          <div class="recipe-card-body">
+            <h5>Kabak Çorbası</h5>
+            <p>Lezzetli ve sağlıklı bir seçenek.</p>
+          </div>
+          <div class="tooltip-text">Hafif ve lezzetli</div>
+        </div>
+      </div>
+
+      <!-- Kremalı Mantar Çorbası -->
+      <div class="col-md-4">
+        <div class="recipe-card" data-bs-toggle="modal" data-bs-target="#kremaliMantarCorbasiModal">
+          <img src="resimler/Çorbalar/kremali-mantar.jpeg" alt="Kremalı Mantar Çorbası" />
+          <div class="recipe-card-body">
+            <h5>Kremalı Mantar Çorbası</h5>
+            <p>Ferahlatıcı ve doyurucu.</p>
+          </div>
+          <div class="tooltip-text">Zengin ve kremalı</div>
+        </div>
+      </div>
+
+      <!-- Mercimek Çorbası -->
+      <div class="col-md-4">
+        <div class="recipe-card" data-bs-toggle="modal" data-bs-target="#mercimekCorbasiModal">
+          <img src="resimler/Çorbalar/mercimek.jpg" alt="Mercimek Çorbası" />
+          <div class="recipe-card-body">
+            <h5>Mercimek Çorbası</h5>
+            <p>Türk mutfağının vazgeçilmezi.</p>
+          </div>
+          <div class="tooltip-text">Doyurucu ve sağlıklı</div>
+        </div>
+      </div>
+
+      <!-- Mısır Çorbası -->
+      <div class="col-md-4">
+        <div class="recipe-card" data-bs-toggle="modal" data-bs-target="#misirCorbasiModal">
+          <img src="resimler/Çorbalar/misir-corbasi.jpg" alt="Mısır Çorbası" />
+          <div class="recipe-card-body">
+            <h5>Mısır Çorbası</h5>
+            <p>Yumuşacık ve lezzetli.</p>
+          </div>
+          <div class="tooltip-text">Tatlı ve kremsi</div>
+        </div>
+      </div>
+
+      <!-- Pirinç Çorbası -->
+      <div class="col-md-4">
+        <div class="recipe-card" data-bs-toggle="modal" data-bs-target="#pirincCorbasiModal">
+          <img src="resimler/Çorbalar/pirinc_corbasi.jpg" alt="Pirinç Çorbası" />
+          <div class="recipe-card-body">
+            <h5>Pirinç Çorbası</h5>
+            <p>Hafif ve besleyici.</p>
+          </div>
+          <div class="tooltip-text">Hafif ve besleyici</div>
+        </div>
+      </div>
+
+      <!-- Pırasa Çorbası -->
+      <div class="col-md-4">
+        <div class="recipe-card" data-bs-toggle="modal" data-bs-target="#pirasaCorbasiModal">
+          <img src="resimler/Çorbalar/pirasa-corbasi.jpeg" alt="Pırasa Çorbası" />
+          <div class="recipe-card-body">
+            <h5>Pırasa Çorbası</h5>
+            <p>Lezzetli ve sağlıklı bir seçenek.</p>
+          </div>
+          <div class="tooltip-text">Sağlıklı ve lezzetli</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modals -->
+  <div class="modal fade" id="kabakCorbasiModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header"><h5>Kabak Çorbası</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+        <div class="modal-body">
+          <img src="resimler/Çorbalar/kabak-corbasi.jpeg" alt="Kabak Çorbası" />
+          <p>Kabak çorbası, hem hafif hem de lezzetli bir başlangıç yemeğidir. İlk olarak, 2-3 adet kabak ve 1 adet soğanı doğrayın. Bir tencerede zeytinyağını ısıtıp, doğranmış soğanı soteleyin. Ardından, kabağı ekleyip birkaç dakika daha kavurun. Üzerine 4 su bardağı sebze suyu (veya tavuk suyu) ekleyin ve kabaklar yumuşayana kadar pişirin. Karışıma tuz, karabiber ve isteğe göre biraz muskat rendesi ekleyebilirsiniz. Pişen çorbayı bir blender ile pürüzsüz hale getirin ve kremayı ilave edip karıştırın. Son olarak, biraz daha tuz ve karabiberle tatlandırıp sıcak olarak servis edin. Üzerine taze nane veya dereotu serpip, yanında çıtır ekmekle servis edebilirsiniz.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="kremaliMantarCorbasiModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header"><h5>Kremalı Mantar Çorbası</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+        <div class="modal-body">
+          <img src="resimler/Çorbalar/kremali-mantar.jpeg" alt="Kremalı Mantar Çorbası" />
+          <p>Kremalı mantar çorbası, yoğun aroması ve yumuşak dokusuyla sofraların favorilerindendir. Öncelikle 1 adet soğanı ince doğrayıp tereyağında soteleyin, ardından dilimlenmiş 300 gram mantarı ekleyip suyunu salıp çekene kadar kavurun. 1 yemek kaşığı un ekleyip karıştırın ve ardından 4 su bardağı sıcak su veya tavuk suyu ilave edin. Kaynamaya başladıktan sonra 10-15 dakika pişirin, ardından blender’dan geçirerek pürüzsüz hale getirin. 1 su bardağı krema ekleyip 5 dakika daha kaynatın, tuz ve karabiber ile tatlandırın. Üzerine kıyılmış maydanoz serpip sıcak olarak servis edin.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="mercimekCorbasiModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header"><h5>Mercimek Çorbası</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+        <div class="modal-body">
+          <img src="resimler/Çorbalar/mercimek.jpg" alt="Mercimek Çorbası" />
+          <p>Mercimek çorbası, sağlıklı ve doyurucu bir başlangıç yemeğidir. İlk olarak, 1 adet soğanı ince doğrayıp, bir tencerede zeytinyağında soteleyin. Ardından, 1 su bardağı kırmızı mercimeği ekleyin ve birkaç dakika karıştırarak kavurun. Üzerine 5 su bardağı su veya tavuk suyu ekleyip karıştırın. Çorba kaynamaya başladıktan sonra, 1 adet havuç ve 1 adet patatesi küp küp doğrayıp ekleyin. Mercimekler ve sebzeler yumuşayana kadar pişirin. Karışıma tuz, karabiber, kimyon ve pul biber ekleyin. Çorbayı bir blender ile pürüzsüz hale getirin, ardından 1/2 su bardağı krema ekleyip karıştırın. Sıcak olarak servis edin ve üzerine limon sıkarak lezzetini artırabilirsiniz.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="misirCorbasiModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header"><h5>Mısır Çorbası</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+        <div class="modal-body">
+          <img src="resimler/Çorbalar/misir-corbasi.jpg" alt="Mısır Çorbası" />
+          <p>Mısır çorbası, tatlı ve kremsi yapısıyla oldukça lezzetli bir başlangıç yemeğidir. İlk olarak, bir tencerede 1 adet soğanı ince doğrayıp tereyağında soteleyin. Ardından, 1 yemek kaşığı un ekleyip birkaç dakika karıştırarak kavurun. 2 su bardağı mısır konservesi (veya taze mısır) ve 4 su bardağı sebze veya tavuk suyu ekleyin, karıştırın. Çorba kaynamaya başladıktan sonra, 1/2 su bardağı süt ve 1/2 su bardağı krema ekleyin. Çorbanın kıvamı yoğunlaştığında, tuz ve karabiber ile tatlandırın. Blender’dan geçirin ve pürüzsüz bir kıvam elde edin. Sıcak olarak servis edin, üzerine biraz pul biber veya taze maydanoz serpebilirsiniz.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="pirincCorbasiModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header"><h5>Pirinç Çorbası</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+        <div class="modal-body">
+          <img src="resimler/Çorbalar/pirinc_corbasi.jpg" alt="Pirinç Çorbası" />
+          <p>İlk olarak, 1 adet soğanı ince doğrayıp, 1 yemek kaşığı tereyağı ile bir tencerede soteleyin. Ardından, 1 su bardağı pirinci ekleyip birkaç dakika kavurun. Üzerine 5 su bardağı sıcak su veya tavuk suyu ekleyin ve karıştırın. Çorba kaynamaya başladıktan sonra, tuz, karabiber ve biraz kimyon ekleyin. Pirinçler yumuşayıncaya kadar pişirin. Son olarak, 1/2 su bardağı yoğurt ve 1 yemek kaşığı unla hazırladığınız karışımı çorbaya ilave edin, karıştırarak çorbanın kıvamını açın. Birkaç dakika daha kaynatıp, sıcak olarak servis edin. Üzerine nane veya pul biber serpebilirsiniz.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="pirasaCorbasiModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header"><h5>Pırasa Çorbası</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+        <div class="modal-body">
+          <img src="resimler/Çorbalar/pirasa-corbasi.jpeg" alt="Pırasa Çorbası" />
+          <p>İlk olarak, 2-3 adet pırasayı ince ince doğrayın. Bir tencerede 1 adet doğranmış soğanı, 1 yemek kaşığı tereyağı veya zeytinyağında soteleyin. Soğanlar yumuşayınca, doğranmış pırasayı ekleyip birkaç dakika karıştırarak kavurun. Ardından, 4 su bardağı sıcak su veya sebze suyu ekleyin ve karıştırın. Çorba kaynamaya başladıktan sonra, tuz, karabiber ve isteğe göre biraz kimyon ekleyin. Pırasalar yumuşayana kadar pişirin. Çorba piştikten sonra, bir blender ile pürüzsüz hale getirin. Son olarak, 1/2 su bardağı krema ekleyin ve karıştırarak birkaç dakika daha kaynatın. Sıcak olarak servis edin. Üzerine taze nane veya dereotu serpebilirsiniz.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

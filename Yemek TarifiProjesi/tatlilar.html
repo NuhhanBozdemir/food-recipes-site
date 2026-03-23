@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tatlı Tarifleri</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="common.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Lezzetli Tarifler</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto"> <!-- Menü öğelerini ortalamak için mx-auto eklendi -->
+                <li class="nav-item"><a class="nav-link" href="index.html">Ana Sayfa</a></li>
+                <li class="nav-item"><a class="nav-link" href="kategoriler.html">Kategoriler</a></li>
+                <li class="nav-item"><a class="nav-link" href="hakkinda.html">Hakkında</a></li>
+                <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+                <li class="nav-item"><a class="nav-link" href="login.html">Giriş Yap</a></li> <!-- رابط تسجيل الدخول -->
+            </ul>
+        </div>
+    </div>
+</nav>
+
+  <div class="container">
+    <h2>Tatlı Tarifleri</h2>
+    <div class="row">
+
+      <!-- Baklava -->
+      <div class="col-md-4">
+        <div class="recipe-card" data-bs-toggle="modal" data-bs-target="#baklavaModal">
+          <img src="resimler/tatlılar/baklava.jpg" alt="Baklava" />
+          <div class="recipe-card-body">
+            <h5>Baklava</h5>
+            <p>Çıtır yufkalarla hazırlanan şerbetli klasik tatlı.</p>
+          </div>
+          <div class="tooltip-text">Şerbetli, çıtır ve tatlı!</div>
+        </div>
+      </div>
+
+      <!-- Dondurma -->
+      <div class="col-md-4">
+        <div class="recipe-card" data-bs-toggle="modal" data-bs-target="#dondurmaModal">
+          <img src="resimler/tatlılar/dondurma.jpg" alt="Dondurma" />
+          <div class="recipe-card-body">
+            <h5>Dondurma</h5>
+            <p>Serinletici, süt bazlı geleneksel yaz tatlısı.</p>
+          </div>
+          <div class="tooltip-text">Serinletici ve lezzetli!</div>
+        </div>
+      </div>
+
+      <!-- Güllaç -->
+      <div class="col-md-4">
+        <div class="recipe-card" data-bs-toggle="modal" data-bs-target="#gullacModal">
+          <img src="resimler/tatlılar/güllaç.jpg" alt="Güllaç" />
+          <div class="recipe-card-body">
+            <h5>Güllaç</h5>
+            <p>Sütle ıslatılmış yapraklarla yapılan hafif tatlı.</p>
+          </div>
+          <div class="tooltip-text">Hafif ve sütlü bir tat!</div>
+        </div>
+      </div>
+
+      <!-- Kadayıf -->
+      <div class="col-md-4">
+        <div class="recipe-card" data-bs-toggle="modal" data-bs-target="#kadayifModal">
+          <img src="resimler/tatlılar/kadayif.jpg" alt="Kadayıf" />
+          <div class="recipe-card-body">
+            <h5>Kadayıf</h5>
+            <p>Tel hamur ve cevizle hazırlanan şerbetli tatlı.</p>
+          </div>
+          <div class="tooltip-text">Cevizli ve şerbetli bir tat!</div>
+        </div>
+      </div>
+
+      <!-- Pankek -->
+      <div class="col-md-4">
+        <div class="recipe-card" data-bs-toggle="modal" data-bs-target="#pankekModal">
+          <img src="resimler/tatlılar/pankek.jpg" alt="Pankek" />
+          <div class="recipe-card-body">
+            <h5>Pankek</h5>
+            <p>Kahvaltılık mini krep tatlısı, meyveyle nefis.</p>
+          </div>
+          <div class="tooltip-text">Tatlı ve pratik!</div>
+        </div>
+      </div>
+
+      <!-- Sütlaç -->
+      <div class="col-md-4">
+        <div class="recipe-card" data-bs-toggle="modal" data-bs-target="#sutlacModal">
+          <img src="resimler/tatlılar/sütlaç.jpg" alt="Sütlaç" />
+          <div class="recipe-card-body">
+            <h5>Sütlaç</h5>
+            <p>Pirinç ve sütle yapılan geleneksel fırın tatlısı.</p>
+          </div>
+          <div class="tooltip-text">Klasik sütlü tatlı!</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Modals -->
+
+  <!-- Baklava Modal -->
+  <div class="modal fade" id="baklavaModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content custom-modal">
+        <div class="modal-header"><h5>Baklava</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+        <div class="modal-body">
+          <img src="resimler/tatlılar/baklava.jpg" alt="Baklava" />
+          <p>Baklava yapmak için önce yufkaları açıp, her katına bolca tereyağı sürün. Fındık, ceviz veya antep fıstığı gibi iç harcı seçip, bu karışımı yufkaların arasına serpin. Yufkaları dikkatlice katlayıp, kare veya dikdörtgen dilimlere kesin. Önceden ısıtılmış 180°C fırında yaklaşık 30-40 dakika, üstü altın rengi olana kadar pişirin. Piştikten sonra, baklavanın üzerine soğuyan şerbeti dökün ve şerbeti tamamen çekmesi için birkaç saat dinlendirin. Tatlı servise hazır, yanında bir bardak Türk kahvesiyle enfes olur!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dondurma Modal -->
+  <div class="modal fade" id="dondurmaModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content custom-modal">
+        <div class="modal-header"><h5>Dondurma</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+        <div class="modal-body">
+          <img src="resimler/tatlılar/dondurma.jpg" alt="Dondurma" />
+          <p>Ev yapımı dondurma yapmak için önce bir kaba süt, şeker ve vanilya özütünü ekleyin, iyice karıştırın. Ardından kremayı ekleyin ve karışımı iyice çırpın. Karışımı dondurucuya uygun bir kaba dökün ve her 30 dakikada bir karıştırarak 3-4 saat boyunca dondurun. Dondurma istediğiniz kıvama geldiğinde, servise hazırdır. Farklı tatlar için, çikolata, meyve püresi veya fındık gibi malzemelerle çeşnilendirebilirsiniz. Kendi ev yapımı dondurmanız, tam da istediğiniz kıvamda ve taptaze olacaktır!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Güllaç Modal -->
+  <div class="modal fade" id="gullacModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header"><h5>Güllaç</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+        <div class="modal-body">
+          <img src="resimler/tatlılar/güllaç.jpg" alt="Güllaç" />
+          <p>Güllaç yapmaya başlamak için, bir kaba süt ve şekeri ekleyip, şeker eriyene kadar karıştırın. Güllaç yapraklarını sırayla sütün içine batırıp, hafifçe ıslatarak bir tepsiye dizin. Her katmanın üzerine ceviz veya fındık serpiştirip, tekrar güllaç yaprağı ekleyin. Bütün yaprakları bu şekilde sıraladıktan sonra, kalan süt karışımını üzerine dökün ve tepsiyi buzdolabına koyarak 2-3 saat soğutun. Soğuduktan sonra dilimleyin ve üzerine gül suyu veya nar taneleriyle süsleyerek servis edin. Geleneksel ve hafif bir tatlı olan güllaç, özellikle ramazan ayında çok tercih edilir.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Kadayıf Modal -->
+  <div class="modal fade" id="kadayifModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content custom-modal">
+        <div class="modal-header"><h5>Kadayıf</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+        <div class="modal-body">
+          <img src="resimler/tatlılar/kadayif.jpg" alt="Kadayıf" />
+          <p>Kadayıfı öncelikle ince ince açın ve hafifçe tel tel ayırın. Bir tavada tereyağını eritip, kadayıfı ekleyerek karıştırın ve rengi altın sarısı olana kadar kavurun. Ayrı bir tencerede, su ve şekeri kaynatıp, şerbeti hazırlayın. Şerbeti kaynadıktan sonra, birkaç damla limon ekleyip, 5-10 dakika daha kaynatın. Kavrulmuş kadayıfı, bir tepsiye dökün ve üzerine dövülmüş ceviz veya fıstık serpiştirip, tekrar kadayıf ekleyin. Son olarak, kadayıfı 180°C'de önceden ısıtılmış fırında altın rengini alana kadar pişirin ve sıcak kadayıfın üzerine soğuyan şerbeti dökün. Şerbeti çekene kadar bekledikten sonra dilimleyip servis edin.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pankek Modal -->
+  <div class="modal fade" id="pankekModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content custom-modal">
+        <div class="modal-header"><h5>Pankek</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+        <div class="modal-body">
+          <img src="resimler/tatlılar/pankek.jpg" alt="Pankek" />
+          <p>Bir kasede 1 su bardağı un, 1 yemek kaşığı şeker, 1 tatlı kaşığı kabartma tozu ve bir tutam tuzu karıştırın. Ayrı bir kasede 1 adet yumurta, 1 su bardağı süt ve 2 yemek kaşığı eritilmiş tereyağını çırpın. Kuru karışımı sıvı karışıma ekleyip, homojen bir hamur elde edene kadar karıştırın. Yapışmaz bir tavayı ısıtıp, birkaç damla yağ ekleyin ve karışımdan bir kepçe döküp, her iki tarafını altın rengini alana kadar pişirin. Pişen pankekleri sıcak tutun, ardından üzerine bal, meyve veya çikolata sosu gibi malzemelerle servis yapın. Dilediğiniz gibi süsleyerek afiyetle yiyebilirsiniz!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sütlaç Modal -->
+  <div class="modal fade" id="sutlacModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content custom-modal">
+        <div class="modal-header"><h5>Sütlaç</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+        <div class="modal-body">
+          <img src="resimler/tatlılar/sütlaç.jpg" alt="Sütlaç" />
+          <p>Bir tencereye 1 su bardağı pirinç ve 2 su bardağı suyu koyarak, pirinçler yumuşayana kadar kaynatın. Ardından üzerine 4 su bardağı süt ve 1 su bardağı toz şeker ekleyin, karıştırarak orta ateşte pişirmeye devam edin. Karışım kaynamaya başladığında, 1 tatlı kaşığı vanilin ve 2 yemek kaşığı mısır nişastası ekleyin, sürekli karıştırarak kıvam alana kadar pişirin. Sütlaç koyu kıvamlı hale geldiğinde ocaktan alın, sıcak ya da soğuk olarak kaselere dökün. Üzerini tarçınla süsleyerek soğumaya bırakın ve ardından buzdolabında bir süre soğutun. Afiyetle servis edebilirsiniz!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

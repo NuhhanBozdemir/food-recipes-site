@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş Yap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+    
+</head>
+
+<body>
+
+    <!-- Arka planda karartma overlay -->
+    <div class="overlay"></div>
+
+    <!-- Giriş Formu -->
+    <div class="container d-flex justify-content-center align-items-center">
+        <div class="card">
+            <div class="card-header">
+                Giriş Yap
+            </div>
+
+            <form id="loginForm">
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-posta</label>
+                    <input type="email" class="form-control" id="email" placeholder="E-posta adresinizi girin">
+                    <div class="invalid-feedback">Lütfen geçerli bir e-posta adresi girin.</div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="password" class="form-label">Şifre</label>
+                    <input type="password" class="form-control" id="password" placeholder="Şifrenizi girin">
+                    <div class="invalid-feedback">Şifre en az 6 karakter olmalıdır.</div>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Giriş Yap</button>
+            </form>
+
+            <div class="card-footer">
+                <p>Hesabınız yok mu? <a href="register.html">Kayıt Ol</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+
+</html>

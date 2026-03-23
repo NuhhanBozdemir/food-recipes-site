@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tarif Detayı</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        #tarif-resim {
+            max-width: 600px;
+            width: 100%;
+            height: 450px;
+            display: block;
+            margin: 0 auto 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Lezzetli Tarifler</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Ana Sayfa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kategoriler.html">Kategoriler</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hakkinda.html">Hakkında</a></li>
+                    <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+    <div class="container my-5">
+        <h2 id="tarif-baslik"></h2>
+        <img id="tarif-resim" class="img-fluid my-3" alt="Tarif Resmi">
+        <h4>Malzemeler</h4>
+        <ul id="malzemeler-listesi"></ul>
+        <h4>Hazırlık</h4>
+        <p id="hazirlik"></p>
+    </div>
+
+    <script>
+        // Tarif verileri
+        const tarifler = {
+            "makarna": {
+                "baslik": "Makarna Tarifi",
+                "resim": "resimler/makarna.jpg",
+                "malzemeler": ["250 gr makarna", "2 yemek kaşığı zeytinyağı", "1 diş sarımsak", "Domates sosu"],
+                "hazirlik": "Makarna, kısa sürede hazırlanabilen pratik ve lezzetli bir yemektir. Öncelikle makarnayı bol tuzlu suda haşlayarak al dente kıvamına getirin. Bu sırada zeytinyağında sarımsağı hafifçe kavurun ve ardından domates sosunu ekleyerek birkaç dakika pişirin. Haşlanmış makarnayı süzüp sosla güzelce karıştırın. Üzerine rendelenmiş parmesan peyniri serpip sıcak servis yapabilirsiniz. İsteğe bağlı olarak fesleğen ya da kekik ile aromasını zenginleştirebilirsiniz."
+            },
+            "pizza": {
+                "baslik": "Pizza Tarifi",
+                "resim": "resimler/pizza.jpg",
+                "malzemeler": ["Hamur", "Domates sosu", "Mozarella", "Zeytin"],
+                "hazirlik": "Ev yapımı pizza hazırlamak oldukça keyiflidir. Öncelikle pizza hamurunu yoğurup mayalanmaya bırakın; hamur en az 30 dakika dinlenmelidir. Hamur hazır olduktan sonra açın ve üzerine domates sosunu eşit şekilde yayın. Mozzarella peyniri ve tercih ettiğiniz malzemeleri (zeytin, mantar, sucuk vb.) serpiştirin. Önceden ısıtılmış 200°C fırında yaklaşık 15–20 dakika, kenarları kızarana kadar pişirin. Fırından çıkar çıkmaz üzerine fesleğen yaprakları serpip sıcak servis edin."
+            },
+            "salata": {
+                "baslik": "Yeşil Salata",
+                "resim": "resimler/yeşil salata.jpg",
+                "malzemeler": ["Marul", "Salatalık", "Zeytinyağı", "Limon"],
+                "hazirlik": "Yeşil salata yapmak oldukça pratik ve sağlıklı bir seçenektir. Öncelikle marul, roka ve taze nane gibi yeşillikleri bol suyla yıkayıp iyice süzün. Salatalık, domates ve arzuya göre kırmızı biber gibi sebzeleri doğrayarak karışıma ekleyin. Zeytinyağı, limon suyu ve tuzla hazırladığınız sosu salatanın üzerine gezdirin. İyice karıştırıp servis tabağına alın. Üzerine dilerseniz birkaç dilim avokado veya ceviz ekleyerek lezzetini artırabilirsiniz."
+            },
+            "biftek": {
+                "baslik": "Biftek Tarifi",
+                "resim": "resimler/biftek.jpg",
+                "malzemeler": ["1 adet biftek", "Tuz", "Karabiber", "Zeytinyağı"],
+                "hazirlik": "Biftek pişirmenin sırrı doğru ısı ve doğru süreyi yakalamaktır. Biftekleri pişirmeden önce oda sıcaklığına getirin ve her iki yüzünü de zeytinyağıyla hafifçe yağlayıp tuz ve karabiberle tatlandırın. İyice ısıtılmış döküm tavada her iki yüzünü ikişer dakika mühürleyin. Ardından bifteği orta ateşte, isteğe göre 3–5 dakika daha pişirin. Pişen eti tavadan alıp 5 dakika kadar dinlendirin ki suyu içinde kalsın. Yanında sotelenmiş sebzeler ya da patates püresiyle servis edebilirsiniz."
+            },
+            "dondurma": {
+                "baslik": "Ev Yapımı Dondurma",
+                "resim": "resimler/dondurma.jpg",
+                "malzemeler": ["2 su bardağı süt", "1 su bardağı şeker", "Vanilin", "Meyve püresi (isteğe bağlı)"],
+                "hazirlik": "Evde dondurma yapmak için önce süt, şeker ve isteğe göre vanilin veya meyve püresi gibi aromaları bir tencerede karıştırın. Karışımı orta ateşte şeker eriyene kadar ısıtın ancak kaynatmayın. Ardından ocaktan alıp soğumaya bırakın. Soğuyan karışımı bir kaba dökün ve derin dondurucuya yerleştirin. Her 30 dakikada bir çıkarıp karıştırarak buz kristallerinin oluşmasını engelleyin; bu işlemi 4–5 kez tekrar edin. 5–6 saat sonra kıvamlı ve pürüzsüz bir ev yapımı dondurmanız hazır olacak."
+            },
+            "balik": {
+                "baslik": "Balık Izgara",
+                "resim": "resimler/balık ızgara.jpg",
+                "malzemeler": ["1 adet levrek", "Limon", "Tuz", "Zeytinyağı"],
+                "hazirlik": "Balık ızgara için öncelikle balığı temizleyin ve içini güzelce yıkayın. Ardından zeytinyağı, limon suyu, tuz ve tercihen kekik ile bir marine sos hazırlayın. Balığı bu karışıma bulayıp 15–20 dakika buzdolabında dinlendirin. Izgarayı iyice ısıtın ve balığın her iki yüzünü de 4–5 dakika kadar pişirin. Pişirme sırasında balığın dağılmaması için dikkatlice çevirin. Yanında roka salatası veya közlenmiş sebzelerle servis edebilirsiniz."
+            },
+            "baklava": {
+                "baslik": "Baklava",
+                "resim": "resimler/baklava.jpg",
+                "malzemeler": ["Baklavalık yufka", "Ceviz", "Tereyağı", "Şeker", "Su", "Limon"],
+                "hazirlik": "Baklava yapımına şerbeti hazırlayarak başlayın; şeker ve suyu kaynatıp birkaç damla limon suyu ekleyerek soğumaya bırakın. Baklavalık yufkaları dikkatlice üst üste serin, her katı erimiş tereyağı ile yağlayın ve ortasına bolca dövülmüş ceviz serpin. Katları tamamladıktan sonra baklavayı baklava dilimi şeklinde kesin. Önceden ısıtılmış 180 derece fırında üzeri kızarana kadar pişirin. Fırından çıkan sıcak baklavanın üzerine soğumuş şerbeti dökün. Tatlınız şerbeti çekince servis etmeye hazırdır."
+            },
+            "burger": {
+                "baslik": "Ev Yapımı Burger",
+                "resim": "resimler/burger.jpg",
+                "malzemeler": ["Kıyma", "Ekmek", "Soğan", "Domates", "Marul", "Baharatlar"],
+                "hazirlik": "Ev yapımı burgerin keyfini çıkarabilmek için öncelikle kıymayı baharatlarla yoğurun ve her birinden eşit büyüklükte köfteler hazırlayın. Köfteleri tavada ya da ızgarada her iki tarafı güzelce kızarana kadar pişirin. Bu sırada ekmekleri ikiye bölüp iç yüzeylerini hafifçe kızartın. Pişen köfteleri ekmeklerin arasına yerleştirin ve üzerine dilediğiniz garnitürleri (domates, marul, soğan vb.) ekleyin. Burgeri, tercihinize göre mayonez, ketçap veya hardal ile tatlandırarak servis edin. Pratik ve lezzetli bir ev yapımı burger hazır!"
+            },
+            "corba": {
+                "baslik": "Mercimek Çorbası",
+                "resim": "resimler/Çorbalar/mercimek.jpg",
+                "malzemeler": ["1 su bardağı mercimek", "1 adet soğan", "1 yemek kaşığı tereyağı", "Tuz", "Su"],
+                "hazirlik": "Mercimek çorbası, hem besleyici hem de kolayca hazırlanan bir tariftir. İlk olarak mercimekleri yıkayıp, bir tencerede soğanla birlikte tereyağında kavurun. Ardından suyu ekleyip mercimekler yumuşayana kadar pişirin. Çorba piştikten sonra, bir el blendırı ile pürüzsüz hale getirebilirsiniz. Tuz ve karabiber ile tatlandırarak sıcak servis edin. Yanında limon dilimleriyle servis ederseniz, çorbanın lezzeti daha da artacaktır."
+            }
+        };
+
+        // URL'den tarife ait parametreyi al
+        const urlParams = new URLSearchParams(window.location.search);
+        const tarifAdi = urlParams.get("tarif");
+
+        if (tarifAdi && tarifler[tarifAdi]) {
+            // Tarif bilgilerini HTML'e ekle
+            document.getElementById("tarif-baslik").innerText = tarifler[tarifAdi].baslik;
+            document.getElementById("tarif-resim").src = tarifler[tarifAdi].resim;
+
+            // Malzemeleri listeye ekle
+            const malzemeListesi = document.getElementById("malzemeler-listesi");
+            tarifler[tarifAdi].malzemeler.forEach(malzeme => {
+                const li = document.createElement("li");
+                li.innerText = malzeme;
+                malzemeListesi.appendChild(li);
+            });
+
+            document.getElementById("hazirlik").innerText = tarifler[tarifAdi].hazirlik;
+        } else {
+            document.querySelector(".container").innerHTML = "<h2>Tarif Bulunamadı!</h2>";
+        }
+    </script>
+
+</body>
+</html>

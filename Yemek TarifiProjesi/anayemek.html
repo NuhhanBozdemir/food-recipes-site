@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ana Yemek Tarifleri</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="common.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Lezzetli Tarifler</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto"> <!-- Menü öğelerini ortalamak için mx-auto eklendi -->
+                    <li class="nav-item"><a class="nav-link" href="index.html">Ana Sayfa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kategoriler.html">Kategoriler</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hakkinda.html">Hakkında</a></li>
+                    <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Giriş Yap</a></li> 
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h2>Ana Yemek Tarifleri</h2>
+
+        <div class="row">
+            <!-- Karnıyarık -->
+            <div class="col-md-4">
+                <div class="recipe-card" data-bs-toggle="modal" data-bs-target="#karnıyarıkModal">
+                    <img src="resimler/Ana yemek/karnıyarık.jpg" alt="Karnıyarık">
+                    <div class="recipe-card-body">
+                        <h5>Karnıyarık</h5>
+                        <p>Kıymalı harçla doldurulan patlıcanın fırında buluşması.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fırın Tavuk -->
+            <div class="col-md-4">
+                <div class="recipe-card" data-bs-toggle="modal" data-bs-target="#fırınTavukModal">
+                    <img src="resimler/Ana yemek/firin_tavuk.jpg" alt="Fırın Tavuk">
+                    <div class="recipe-card-body">
+                        <h5>Fırın Tavuk</h5>
+                        <p>Baharatlarla harmanlanmış nefis fırın tavuğu tarifi.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mantı -->
+            <div class="col-md-4">
+                <div class="recipe-card" data-bs-toggle="modal" data-bs-target="#mantıModal">
+                    <img src="resimler/Ana yemek/manti.jpg" alt="Mantı">
+                    <div class="recipe-card-body">
+                        <h5>Mantı</h5>
+                        <p>Geleneksel Türk mutfağının el emeği göz nuru lezzeti.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Et Sote -->
+            <div class="col-md-4">
+                <div class="recipe-card" data-bs-toggle="modal" data-bs-target="#etSoteModal">
+                    <img src="resimler/Ana yemek/et_sote.jpg" alt="Et Sote">
+                    <div class="recipe-card-body">
+                        <h5>Et Sote</h5>
+                        <p>Sebzelerle harmanlanmış yumuşacık etin harika uyumu.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Biber Dolması -->
+            <div class="col-md-4">
+                <div class="recipe-card" data-bs-toggle="modal" data-bs-target="#biberDolmasıModal">
+                    <img src="resimler/Ana yemek/biber_dolmasi.jpg" alt="Biber Dolması">
+                    <div class="recipe-card-body">
+                        <h5>Biber Dolması</h5>
+                        <p>Zeytinyağlı ya da etli iç harcıyla doldurulmuş nefis dolma.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Taze Fasulye -->
+            <div class="col-md-4">
+                <div class="recipe-card" data-bs-toggle="modal" data-bs-target="#tazeFasulyeModal">
+                    <img src="resimler/Ana yemek/taze_fasulye.jpg" alt="Taze Fasulye">
+                    <div class="recipe-card-body">
+                        <h5>Taze Fasulye</h5>
+                        <p>Zeytinyağı ile pişmiş hafif ve doyurucu bir klasik.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kuru Fasulye -->
+            <div class="col-md-4">
+                <div class="recipe-card" data-bs-toggle="modal" data-bs-target="#kuruFasulyeModal">
+                    <img src="resimler/Ana yemek/kuru_fasulye.jpg" alt="Kuru Fasulye">
+                    <div class="recipe-card-body">
+                        <h5>Kuru Fasulye</h5>
+                        <p>Türk sofralarının vazgeçilmez baklagil yemeği.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Izgara Köfte -->
+            <div class="col-md-4">
+                <div class="recipe-card" data-bs-toggle="modal" data-bs-target="#ızgaraKöfteModal">
+                    <img src="resimler/Ana yemek/izgara_kofte.jpg" alt="Izgara Köfte">
+                    <div class="recipe-card-body">
+                        <h5>Izgara Köfte</h5>
+                        <p>Mangal tadında, dışı çıtır içi sulu nefis köfteler.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sebze Graten -->
+            <div class="col-md-4">
+                <div class="recipe-card" data-bs-toggle="modal" data-bs-target="#sebzeGratenModal">
+                    <img src="resimler/Ana yemek/sebze_graten.jpg" alt="Sebze Graten">
+                    <div class="recipe-card-body">
+                        <h5>Sebze Graten</h5>
+                        <p>Fırında kaşar peyniriyle buluşan sağlıklı sebzeler.</p>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <!-- Piliç Şiş -->
+        </div>
+    </div>
+    
+    <!-- Modals -->
+
+    <!-- Karnıyarık Modal -->
+<div class="modal fade" id="karnıyarıkModal" tabindex="-1" aria-labelledby="karnıyarıkModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content custom-modal">
+            <div class="modal-header">
+                <h5 class="modal-title" id="karnıyarıkModalLabel">Karnıyarık Tarifi</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="resimler/Ana yemek/karnıyarık.jpg" alt="Karnıyarık">
+                <p>Karnıyarık yapmak için öncelikle patlıcanları alacalı soyun ve kızgın yağda hafifçe kızartın. İç harcı için bir tavada kıymayı kavurun, üzerine ince doğranmış soğan, biber ve domates ekleyin. Baharat olarak tuz, karabiber ve isteğe bağlı olarak pul biber ekleyin. Kızartılmış patlıcanların ortasını açarak hazırladığınız kıymalı harcı doldurun. Üzerine bir dilim domates ve biber koyarak fırın tepsisine dizin. Salçalı su hazırlayıp tepsiye dökün ve 180°C fırında 20-25 dakika pişirin. Afiyet olsun!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Fırın Tavuk Modal -->
+<div class="modal fade" id="fırınTavukModal" tabindex="-1" aria-labelledby="fırınTavukModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="fırınTavukModalLabel">Fırın Tavuk Tarifi</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="resimler/Ana yemek/firin_tavuk.jpg" alt="Fırın Tavuk">
+                <p>Fırın tavuk yapmak için bir bütün tavuğu temizleyin ve kurulayın. Tavuğun her yerine zeytinyağı, tuz, karabiber, kırmızı toz biber ve kekik sürün. İçine isteğe bağlı olarak limon ve sarımsak koyabilirsiniz. Tavuğu fırın tepsisine yerleştirin ve etrafına patates, havuç gibi sebzeler ekleyin. 200°C önceden ısıtılmış fırında yaklaşık 1-1.5 saat pişirin. Tavuğun üzeri kızardığında servise hazırdır. Afiyet olsun!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Mantı Modal -->
+<div class="modal fade" id="mantıModal" tabindex="-1" aria-labelledby="mantıModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="mantıModalLabel">Mantı Tarifi</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="resimler/Ana yemek/manti.jpg" alt="Mantı">
+                <p>Mantı yapmak için hamur hazırlayın: 2 su bardağı un, 1 yumurta, bir tutam tuz ve yeterince su ile sert bir hamur yoğurun. Hamuru ince açın ve küçük kareler halinde kesin. İç harcı için kıymayı, rendelenmiş soğanı, tuz ve karabiberi karıştırın. Karelerin ortasına kıymalı harç koyup bohça şeklinde kapatın. Mantıları kaynar tuzlu suda haşlayın. Üzerine sarımsaklı yoğurt ve tereyağında kızdırılmış pul biber dökerek servis yapın. Afiyet olsun!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Et Sote Modal -->
+<div class="modal fade" id="etSoteModal" tabindex="-1" aria-labelledby="etSoteModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="etSoteModalLabel">Et Sote Tarifi</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="resimler/Ana yemek/et_sote.jpg" alt="Et Sote">
+                <p>Et sote yapmak için kuşbaşı doğranmış eti bir tavada yüksek ateşte mühürleyin. Ardından ince doğranmış soğan, biber ve domates ekleyin. Baharat olarak tuz, karabiber, kekik ve pul biber kullanabilirsiniz. Etin yumuşaması için biraz sıcak su ekleyip kısık ateşte pişirin. Yanında pilav veya makarna ile servis yapabilirsiniz. Afiyet olsun!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Biber Dolması Modal -->
+<div class="modal fade" id="biberDolmasıModal" tabindex="-1" aria-labelledby="biberDolmasıModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content custom-modal">
+            <div class="modal-header">
+                <h5 class="modal-title" id="biberDolmasıModalLabel">Biber Dolması Tarifi</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="resimler/Ana yemek/biber_dolmasi.jpg" alt="Biber Dolması">
+                <p>Biber dolması yapmak için dolmalık biberlerin içini temizleyin. İç harcı için pirinç, ince doğranmış soğan, domates, maydanoz, zeytinyağı, tuz ve baharatları karıştırın. Harcı biberlerin içine doldurun ve üzerini domates dilimleriyle kapatın. Tencereye dizip üzerine salçalı su dökün. Kısık ateşte biberler yumuşayana kadar pişirin. Afiyet olsun!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Taze Fasulye Modal -->
+<div class="modal fade" id="tazeFasulyeModal" tabindex="-1" aria-labelledby="tazeFasulyeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="tazeFasulyeModalLabel">Taze Fasulye Tarifi</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="resimler/Ana yemek/taze_fasulye.jpg" alt="Taze Fasulye">
+                <p>Taze fasulye yapmak için fasulyeleri ayıklayıp yıkayın. Bir tencerede zeytinyağı ile ince doğranmış soğanı kavurun. Üzerine doğranmış domates ve fasulyeleri ekleyin. Tuz, şeker ve biraz sıcak su ekleyerek kısık ateşte fasulyeler yumuşayana kadar pişirin. Soğuk veya sıcak servis yapabilirsiniz. Afiyet olsun!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Kuru Fasulye Modal -->
+<div class="modal fade" id="kuruFasulyeModal" tabindex="-1" aria-labelledby="kuruFasulyeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content custom-modal">
+            <div class="modal-header">
+                <h5 class="modal-title" id="kuruFasulyeModalLabel">Kuru Fasulye Tarifi</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="resimler/Ana yemek/kuru_fasulye.jpg" alt="Kuru Fasulye">
+                <p>Kuru fasulyeyi bir gece önceden suda bekletin. Ertesi gün suyunu süzüp tencereye alın, üzerini geçecek kadar suyla haşlayın. Ayrı bir tencerede soğanı kavurun, salça ve haşlanmış fasulyeyi ekleyin. Tuz, pul biber ve su ilavesiyle kısık ateşte pişirin. İsteğe bağlı olarak et veya pastırma da eklenebilir. Yanında pilavla servis edilirse klasik bir Türk öğle yemeği olur. Afiyet olsun!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Izgara Köfte Modal -->
+<div class="modal fade" id="ızgaraKöfteModal" tabindex="-1" aria-labelledby="ızgaraKöfteModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content custom-modal">
+            <div class="modal-header">
+                <h5 class="modal-title" id="ızgaraKöfteModalLabel">Izgara Köfte Tarifi</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="resimler/Ana yemek/izgara_kofte.jpg" alt="Izgara Köfte">
+                <p>Kıymayı bir kaba alın, içine rendelenmiş soğan, galeta unu, yumurta, tuz, karabiber ve kimyon ekleyin. İyice yoğurup şekil verin. Şekil verilen köfteleri buzdolabında dinlendirin. Izgarada veya döküm tavada önlü arkalı pişirin. Yanında közlenmiş biber ve domatesle servis yapabilirsiniz. Pilav veya ekmekle çok iyi gider. Afiyet olsun!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Sebze Graten Modal -->
+<div class="modal fade" id="sebzeGratenModal" tabindex="-1" aria-labelledby="sebzeGratenModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content custom-modal">
+            <div class="modal-header">
+                <h5 class="modal-title" id="sebzeGratenModalLabel">Sebze Graten Tarifi</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="resimler/Ana yemek/sebze_graten.jpg" alt="Sebze Graten">
+                <p>Patates, havuç, kabak ve brokoliyi haşlayın. Beşamel sos için tereyağında un kavurun, süt ekleyerek kıvam alana kadar pişirin. Haşlanmış sebzeleri fırın kabına yerleştirip üzerine beşamel sosu dökün. Üzerine rendelenmiş kaşar peyniri serpin ve 180°C fırında üzeri kızarana kadar pişirin. Hafif ama doyurucu bir ana yemek alternatifi sunar. Afiyet olsun!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

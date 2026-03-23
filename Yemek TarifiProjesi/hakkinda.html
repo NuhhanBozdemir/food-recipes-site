@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hakkımızda</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .navbar {
+            padding: 6px 0; /* Navbar yüksekliğini düzenler */
+        }
+
+        .navbar-nav {
+            margin: 0 auto; /* Menü öğelerini ortalar */
+        }
+
+        .content-container {
+            margin-top: 40px; /* Navbar ile içerik arasına mesafe ekler */
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 36px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+
+        .team-member {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            overflow: hidden;
+            transition: all 0.3s ease-in-out;
+            padding: 20px;
+            position: relative;
+            max-width: 280px; /* Kartların maksimum genişliği */
+            margin: 0 auto; /* Ortalamak için */
+        }
+
+        .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        .team-member img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .team-member h5 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .team-member p {
+            font-size: 14px;
+            color: #7f8c8d;
+            display: none; /* Bilgiler başlangıçta gizli */
+        }
+
+        .team-member:hover p {
+            display: block; /* Fareyle üzerine gelindiğinde bilgileri göster */
+        }
+
+        .row {
+            display: flex;
+            justify-content: center; /* Ortalamak için */
+            gap: 20px; /* Aralarındaki mesafeyi düzenler */
+            flex-wrap: wrap;
+        }
+
+        .col-md-4 {
+            flex: 1 1 calc(33.333% - 20px);
+            max-width: calc(33.333% - 20px);
+        }
+
+        @media (max-width: 768px) {
+            .col-md-4 {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Lezzetli Tarifler</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto"> <!-- Menü öğelerini ortalamak için mx-auto eklendi -->
+                    <li class="nav-item"><a class="nav-link" href="index.html">Ana Sayfa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kategoriler.html">Kategoriler</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hakkinda.html">Hakkında</a></li>
+                    <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Giriş Yap</a></li> 
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hakkımızda İçeriği -->
+    <div class="content-container">
+        <h2>Hakkımızda</h2>
+        <p>Lezzetli Tarifler, evde yemek yapmayı sevenler için en iyi tarifleri sunan bir platformdur. Amacımız, herkesin mutfağında kolayca hazırlayabileceği yemekleri paylaşmak ve insanları sağlıklı, pratik yemekler yapmaya teşvik etmektir.</p>
+
+        <h3>Ekibimiz</h3>
+        <div class="row">
+            <!-- Aşçı 1: Abdurrezzak Ekidi -->
+            <div class="col-md-4">
+                <div class="team-member">
+                    <img src="resimler/sahil.jpg" alt="Abdurrezzak Ekidi">
+                    <h5>Abdurrezzak Ekidi</h5>
+                    <p><strong>Web Geliştirici & Yazılım Mühendisi</strong></p>
+                    <p>Abdurrezzak Ekidi, Lezzetli Tarifler platformunun yazılım altyapısını geliştiren bir yazılım geliştiricisidir. Hem front-end hem de back-end teknolojileriyle platformun verimli ve hızlı olmasını sağlar. Yeni teknolojilerle sürekli iyileştirmeler yapar.</p>
+                </div>
+            </div>
+
+            <!-- Aşçı 2: Nuhhan Bozdemir -->
+            <div class="col-md-4">
+                <div class="team-member">
+                    <img src="resimler/nuhhan.png" alt="Nuhhan Bozdemir">
+                    <h5>Nuhhan Bozdemir</h5>
+                    <p><strong>Tarif Editörü</strong></p>
+                    <p>Tarifleri titizlikle düzenleyerek herkesin kolayca uygulayabileceği hale getiriyor. Ayrıca yenilikçi tariflerle mutfağı renklendiriyor.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lezzetli Tarifler</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Lezzetli Tarifler</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Ana Sayfa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kategoriler.html">Kategoriler</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hakkinda.html">Hakkında</a></li>
+                    <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Giriş Yap</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <div class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="display-5 fw-bold">Ne Pişirmek İstersin?</h1>
+            <form class="search-box d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Mükemmel Tarifi Gör" aria-label="Ara" id="searchInput">
+                <button class="btn btn-danger" type="submit">Ara</button>
+            </form>
+            <div class="search-suggestions" id="suggestionsBox"></div>
+
+            <div class="category-buttons mt-4">
+                <button class="btn"><a href="anayemek.html" style="color: black;text-decoration: none;">Ana Yemek</a></button>
+                <button class="btn"><a href="kahvalti.html" style="color: black;text-decoration: none;">Kahvaltı</a></button>
+                <button class="btn"><a href="tatlilar.html" style="color: black;text-decoration: none;">Tatlılar</a></button>
+                <button class="btn"><a href="corbalar.html" style="color: black;text-decoration: none;">Çorbalar</a></button>
+                <button class="btn"><a href="makarnalar.html" style="color: black;text-decoration: none;">Makarnalar</a></button>
+                <button class="btn"><a href="salatalar.html" style="color: black;text-decoration: none;">Salatalar</a></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <h2 class="text-center mb-5">Öne Çıkan Tarifler</h2>
+        <div class="row">
+            <!-- Tarif Kartları Burada -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="resimler/makarna.jpg" class="card-img-top" alt="Makarna">
+                    <div class="card-body">
+                        <h5 class="card-title">Makarna Tarifi</h5>
+                        <a href="tarif-detay.html?tarif=makarna" class="btn btn-primary">Detay</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="resimler/pizza.jpg" class="card-img-top" alt="Pizza">
+                    <div class="card-body">
+                        <h5 class="card-title">Pizza Tarifi</h5>
+                        <a href="tarif-detay.html?tarif=pizza" class="btn btn-primary">Detay</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="resimler/yeşil salata.jpg" class="card-img-top" alt="Salata">
+                    <div class="card-body">
+                        <h5 class="card-title">Yeşil Salata</h5>
+                        <a href="tarif-detay.html?tarif=salata" class="btn btn-primary">Detay</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-4">
+                <div class="card">
+                    <img src="resimler/burger.jpg" class="card-img-top" alt="Burger">
+                    <div class="card-body">
+                        <h5 class="card-title">Ev Yapımı Burger</h5>
+                        <a href="tarif-detay.html?tarif=burger" class="btn btn-primary">Detay</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-4">
+                <div class="card">
+                    <img src="resimler/biftek.jpg" class="card-img-top" alt="Biftek">
+                    <div class="card-body">
+                        <h5 class="card-title">Biftek Tarifi</h5>
+                        <a href="tarif-detay.html?tarif=biftek" class="btn btn-primary">Detay</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-4">
+                <div class="card">
+                    <img src="resimler/Çorbalar/mercimek.jpg" class="card-img-top" alt="Çorba">
+                    <div class="card-body">
+                        <h5 class="card-title">Mercimek Çorbası</h5>
+                        <a href="tarif-detay.html?tarif=corba" class="btn btn-primary">Detay</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-4">
+                <div class="card">
+                    <img src="resimler/tatlılar/baklava.jpg" class="card-img-top" alt="Baklava">
+                    <div class="card-body">
+                        <h5 class="card-title">Baklava</h5>
+                        <a href="tarif-detay.html?tarif=baklava" class="btn btn-primary">Detay</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-4">
+                <div class="card">
+                    <img src="resimler/tatlılar/dondurma.jpg" class="card-img-top" alt="Dondurma">
+                    <div class="card-body">
+                        <h5 class="card-title">Ev Yapımı Dondurma</h5>
+                        <a href="tarif-detay.html?tarif=dondurma" class="btn btn-primary">Detay</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-4">
+                <div class="card">
+                    <img src="resimler/balık ızgara.jpg" class="card-img-top" alt="Balık">
+                    <div class="card-body">
+                        <h5 class="card-title">Balık Izgara</h5>
+                        <a href="tarif-detay.html?tarif=balik" class="btn btn-primary">Detay</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-3">
+        <p>© 2025 Lezzetli Tarifler | Tüm Hakları Saklıdır.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+
+</script>
+
+<!-- Sayfanın sonuna ekleyin -->
+<div class="back-to-top">
+    <button onclick="scrollToTop()" class="btn btn-danger">Başa Dön</button>
+</div>
+
+<script>
+    // Sayfanın en üstüne kaydırma fonksiyonu
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
+
+</body>
+</html>
